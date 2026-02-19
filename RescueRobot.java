@@ -12,7 +12,6 @@ public class RescueRobot implements Flyable, Drivable, ThermalSensor, Communicab
         this.thermal = new ThermalCamera();
     }
 
-    // 🔥 แก้ method ชื่อชนกัน
     @Override
     public String status() {
         return "ROBOT: " + Flyable.super.status() + " + " + Drivable.super.status();
